@@ -12,6 +12,10 @@ public class Prac {
 
         System.out.println("");
 
+        // LESSON: Variables
+
+        System.out.println("");
+
         // int
         int age = 24;
         System.out.println("This is my age when I created this: " + age);
@@ -86,5 +90,7 @@ public class Prac {
         System.out.println("Email Address: " + emailAddress);
         System.out.println("Salary Expectation: $" + salaryExpectation);
         System.out.println("Year of Birth: " + yearOfBirth);
+
+        
     }
 }
