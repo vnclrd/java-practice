@@ -91,6 +91,36 @@ public class Prac {
         System.out.println("Salary Expectation: $" + salaryExpectation);
         System.out.println("Year of Birth: " + yearOfBirth);
 
-        
+        System.out.println("");
+
+        // LESSON: Manipulating Variables
+        int mystery1 = 8 + 6;
+        int mystery2 = 8 - 6;
+
+        System.out.println(mystery1);
+        System.out.println(mystery2);
+
+        System.out.println("");
+
+        int zebrasInZoo = 8;
+        int giraffesInZoo = 4;
+
+        int animalsInZoo = zebrasInZoo + giraffesInZoo;
+        System.out.println(animalsInZoo);
+
+        int numZebrasAfterTrade = zebrasInZoo - 2;
+        System.out.println(numZebrasAfterTrade);
+
+        System.out.println("");
+
+        // Multiplication and Division
+        double subtotal = 30;
+        double tax = 0.0875;
+
+        double total = subtotal + (subtotal * tax);
+        System.out.println(total);
+
+        double perPerson = total / 4;
+        System.out.println(perPerson);
     }
 }
