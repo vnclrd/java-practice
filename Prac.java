@@ -71,5 +71,20 @@ public class Prac {
         System.out.println("Genre: " + genre);
         System.out.println("Runtime: " + runtime + " hours");
         System.out.println("Is PG: " + isPG);
+
+        System.out.println("");
+
+        // Correct naming conventions
+        String firstName = "Samira";
+        String lastName = "Smith";
+        String emailAddress = "samira@google.com";
+        int salaryExpectation = 100000;
+        int yearOfBirth = 1955;
+
+        System.out.println("First Name: " + firstName);
+        System.out.println("Last Name: " + lastName);
+        System.out.println("Email Address: " + emailAddress);
+        System.out.println("Salary Expectation: $" + salaryExpectation);
+        System.out.println("Year of Birth: " + yearOfBirth);
     }
 }
