@@ -194,3 +194,158 @@ function greetInSpanish() {
 
 getReminder()
 greetInSpanish()
+
+// Call function thrice
+function sayThanks() {
+  console.log('Thank you for your purchase! We appreciate your business.')
+}
+
+sayThanks()
+sayThanks()
+sayThanks()
+
+// Parameters and Arguments
+function sayThanks(name) {
+  console.log('Thank you for your purchase, '+ name +'! We appreciate your business.');
+}
+
+sayThanks('Cole')
+
+// Default Parameters
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+
+makeShoppingList()
+
+
+// NEED TO REVIEW
+
+
+// Return (calculate the number of monitors needed)
+function monitorCount(rows, columns) { // declare a function with 2 parameters
+  return rows * columns // computer monitors by multiplyting rows and columns
+}
+
+const numOfMonitors = monitorCount(5, 4) // the office has 5 rows and 4 columns
+console.log(numOfMonitors)
+
+// Helper Function (calculate the cost of monitors)
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+function costOfMonitors(rows, columns) {
+  return monitorCount(rows, columns) * 200 // the cost of each monitor is 200
+}
+
+const totalCost = costOfMonitors(5, 4) // the office has 5 rows and 4 columns
+console.log(totalCost)
+
+// Function Expressions
+const plantNeedsWater = function(day) {
+    if (day === 'Wednesday') {
+        return true
+    } else {
+        return false
+    }
+}
+
+plantNeedsWater('Tuesday')
+console.log(plantNeedsWater('Tuesday'))
+
+
+// NEED TO REVIEW
+
+
+// Arrow Functions (replace the word 'function' with '=>')
+const plantsNeedWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+// Concise Body Arrow Function
+const plantzNeedWater = day => day === 'Wednesday' ? true : false
+console.log(plantzNeedWater('Tuesday'))
+
+
+
+
+
+
+// EXERCISE 1
+let celsius = 37
+let fahrenheit = celsius * (9 / 5) + 32
+console.log(celsius + ' degrees celsius is equivalent to ' + Math.ceil(fahrenheit) + ' degrees fahrenheit.')
+
+
+// EXERCISE 2
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
+    const discountAmount = originalPrice * (discountPercentage / 100)
+    const finalPrice = originalPrice - discountAmount 
+    return finalPrice
+}
+
+const myFinalPrice = calculateDiscountedPrice(100, 20)
+console.log (myFinalPrice)
+
+// EXERCISE 3
+const score = 99
+if (score >= 90) {
+    console.log('Grade: A')
+} else if (score >= 80 && score <= 89) {
+    console.log('Grade: B')
+} else if (score >= 70 && score <= 79) {
+    console.log('Grade: C')
+} else if (score >= 60 && score <= 69) {
+    console.log('Grade: D')
+} else {
+    console.log('Grade: F')
+}
+
+// EXERCISE 4
+const user = 'ivan'
+const pass = '1234'
+let isAuthenticated = false
+if (user === 'ivan' && pass === '1234') {
+    isAuthenticated = true
+    console.log('Login successful.')
+    console.log(`Welcome, Admin ${user}!`)
+} else {
+    console.log('Invalid credentials.')
+}
+
+// EXERCISE 5
+let dayNumber = '1'
+
+switch (dayNumber) {
+    case '1':
+        console.log('Monday')
+        break;
+    case '2':
+        console.log('Tuesday')
+        break;
+    case '3':
+        console.log('Wednesday')
+        break;
+    case '4':
+        console.log('Thursday')
+        break;
+    case '5':
+        console.log('Friday')
+        break;
+    case '6':
+        console.log('Saturday')
+        break;
+    case '7':
+        console.log('Sunday')
+        break;
+    default:
+        console.log("Invalid Day Number")
+        break;
+}
