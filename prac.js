@@ -8,17 +8,17 @@ console.log(60)
 
 // LESSON: Data Types
 
-console.log(10 + 10);
-console.log(10 - 10);
-console.log(10 * 10);
-console.log(10 / 10);
-console.log(10 % 10);
+console.log(10 + 10); // 20
+console.log(10 - 10); // 0
+console.log(10 * 10); // 100
+console.log(10 / 10); // 1
+console.log(10 % 10); // 0
 
-console.log('Hello' + 'World');
-console.log('Hello' + ' ' + 'World');
+console.log('Hello' + 'World'); // HelloWorld
+console.log('Hello' + ' ' + 'World'); // Hello World
 
-console.log('Codecademy'.toUpperCase());
-console.log('    Remove whitespace   '.trim());
+console.log('Codecademy'.toUpperCase()); // CODECADEMY
+console.log('    Remove whitespace   '.trim()); // Remove whitespace
 
 console.log(Math.random() * 100); // Generates a random number and multiply to 100
 console.log(Math.floor(Math.random() * 100)); // Math.floor rounds the number down to the nearest whole number
@@ -29,20 +29,20 @@ console.log(Number.isInteger(2017)); // Check if the number is an integer
 // LESSON: Variables
 
 // var - can be re-assigned; function/globally-scoped
-var favoriteFood = 'pizza';
-var numOfSlices = 8;
-console.log(favoriteFood);
-console.log(numOfSlices);
+var favoriteFood = 'pizza'; 
+var numOfSlices = 8; 
+console.log(favoriteFood); // pizza
+console.log(numOfSlices); // 8
 
 // let - can be re-assigned; block-scoped
 let changeMe = true;
 changeMe = false;
-console.log(changeMe);
+console.log(changeMe); // false
 
 // const - cannot be re-assigned
 const entree = 'Enchiladas';
 // entree = 'Tacos';
-console.log(entree);
+console.log(entree); // Enchiladas
 
 // Mathematical Assignment Operations
 let levelUp = 10;
@@ -50,52 +50,56 @@ let powerLevel = 9001;
 let multiplyMe = 32;
 let quarterMe = 1152;
 
-levelUp += 5;
-powerLevel -= 100;
-multiplyMe *= 11;
-quarterMe /= 4;
+levelUp += 5; 
+powerLevel -= 100; 
+multiplyMe *= 11; 
+quarterMe /= 4; 
 
-console.log('The value of levelUp:', levelUp); 
-console.log('The value of powerLevel:', powerLevel); 
-console.log('The value of multiplyMe:', multiplyMe); 
-console.log('The value of quarterMe:', quarterMe);
+console.log('The value of levelUp:', levelUp); // 15
+console.log('The value of powerLevel:', powerLevel); // 8901
+console.log('The value of multiplyMe:', multiplyMe); // 352
+console.log('The value of quarterMe:', quarterMe); // 288
 
 // Increment and Decrement Operator
 let gainedDollar = 3;
 let lostDollar = 50;
 
-gainedDollar++;
-lostDollar--;
+gainedDollar++; // 4
+lostDollar--; // 49
+
+console.log(gainedDollar)
+console.log(lostDollar)
 
 // String Concatenation with Variables
 let favoriteAnimal = 'Dog';
-console.log('My favorite animal: ' + favoriteAnimal);
+console.log('My favorite animal: ' + favoriteAnimal); // My favorite animal: Dog
 
 // String Interpolation
 const myName = 'Ivan';
 const myCity = 'Taguig';
-console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`); // My name is Ivan. My favorite city is Taguig.
 
 // typeof operator
 let newVariable = 1;
-console.log(typeof newVariable);
-
+console.log(typeof newVariable); // number
 
 // If statement
 let sale = true;
 
 if (sale) {
-  console.log('Time to buy!');
+  console.log('Time to buy!'); // Time to buy!
 }
 
 // If else statement
 let isSale = true;
 isSale = false;
 
+isSale ? console.log('Buy it.') : console.log("Don't buy it yet.") // Ternary Refactor
+
 if (isSale) {
     console.log('Buy it.');
 } else {
-    console.log("Don't buy it yet.")
+    console.log("Don't buy it yet.") // Don't buy it yet.
 }
 
 // Comparison Operators
@@ -104,7 +108,7 @@ let hungerLevel = 7;
 if (hungerLevel > 7) {
   console.log('Time to eat!');
 } else {
-  console.log('We can eat later!');
+  console.log('We can eat later!'); // We can eat later!
 }
 
 // Logical Operators
@@ -114,14 +118,14 @@ let tirednessLevel = 6;
 if (mood === 'sleepy' && tirednessLevel > 8) {
   console.log('time to sleep');
 } else {
-  console.log('not bed time yet');
+  console.log('not bed time yet'); // not bed time yet
 }
 
 // Truthy and Falsy
 let wordCount = 1;
 
 if (wordCount) {
-  console.log("Great! You've started your work!");
+  console.log("Great! You've started your work!"); // Great! You've started your work!
 } else {
   console.log('Better get to work!');
 }
@@ -131,7 +135,7 @@ let favoritePhrase = '';
 if (favoritePhrase) {
   console.log("This string doesn't seem to be empty.");
 } else {
-  console.log('This string is definitely empty.');
+  console.log('This string is definitely empty.'); // This string is definitely empty.
 }
 
 // Truthy and Falsy Assignment
